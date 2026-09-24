@@ -40,7 +40,7 @@ jobs:
           data_service_url:  https://data-service-v2-apigw.commercialstaging.dev.veedna.com
           project_name: "acme-base-image"
           project_version: ${{ github.event.inputs.version }}
-          org_name: "Root Organization"
+          org_name: "Base Organization"
           post_scan: fix_plan
 
       # 3. Rebuild only when curated fixes exist (already available as-is).
@@ -71,5 +71,5 @@ jobs:
           data_service_url:  https://data-service-v2-apigw.commercialstaging.dev.veedna.com
           project_name: "acme-base-image"
           project_version: "${{ github.event.inputs.version }}-patched"
-          org_name: "Root Organization"
+          org_name: "Base Organization"
           post_scan: scan_only
