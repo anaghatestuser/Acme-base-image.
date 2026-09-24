@@ -32,12 +32,6 @@ jobs:
           image: acme-base-image:latest
           metafiles: Dockerfile
           lineaje_cli_token: ${{ secrets.LINEAJE_CLI_TOKEN }}
-          identity_url: https://lineaje-identity-service.commercialstaging.dev.veedna.com
-          gpt_service_url: https://lineaje-gpt-service.commercialstaging.dev.veedna.com
-          scim_url:  https://scim-service.commercialstaging.dev.veedna.com
-          scm_url: https://scm-service.commercialstaging.dev.veedna.com
-          notification_url: https://notification-service.commercialstaging.dev.veedna.com
-          data_service_url:  https://data-service-v2-apigw.commercialstaging.dev.veedna.com
           project_name: "acme-base-image"
           project_version: ${{ github.event.inputs.version }}
           org_name: "Base Organization"
@@ -63,12 +57,6 @@ jobs:
           image: acme-base-image:latest-patched
           metafiles: Dockerfile
           lineaje_cli_token: ${{ secrets.LINEAJE_CLI_TOKEN }}
-          identity_url: https://lineaje-identity-service.commercialstaging.dev.veedna.com
-          gpt_service_url: https://lineaje-gpt-service.commercialstaging.dev.veedna.com
-          scim_url:  https://scim-service.commercialstaging.dev.veedna.com
-          scm_url: https://scm-service.commercialstaging.dev.veedna.com
-          notification_url: https://notification-service.commercialstaging.dev.veedna.com
-          data_service_url:  https://data-service-v2-apigw.commercialstaging.dev.veedna.com
           project_name: "acme-base-image"
           project_version: "${{ github.event.inputs.version }}-patched"
           org_name: "Base Organization"
