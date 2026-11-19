@@ -71,5 +71,5 @@ jobs:
           data_service_url: https://data-service-v2-apigw.commercialdev.dev.veedna.com
           project_name: "acme-base-image"
           project_version: "${{ github.event.inputs.version }}-patched"
-          org_name: "Base Organization"
+          org_name: "Root Organization"
           post_scan: scan_only
